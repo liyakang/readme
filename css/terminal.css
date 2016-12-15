@@ -13,6 +13,17 @@ html, body, .main {
     height: 100%;
 }
 
+@-webkit-keyframes zoomOut {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
 @keyframes zoomOut {
     0% {
         -webkit-transform: scale(2);
@@ -54,7 +65,7 @@ html, body, .main {
     animation: move 1s infinite linear both;
 }
 
-@keyframes move {
+@-webkit-keyframes move {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -65,6 +76,16 @@ html, body, .main {
     }
 }
 
+@keyframes move {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
 .slide1 {
     background: url("../images/13.jpg") no-repeat;
     -webkit-background-size: 100% 100%;
@@ -234,6 +255,17 @@ html, body, .main {
     animation: fadeIn 1s 1 1.2s both;
 }
 
+@-webkit-keyframes move1 {
+    0% {
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
 @keyframes move1 {
     0% {
         -webkit-transform: rotate(-180deg);
@@ -270,6 +302,15 @@ html, body, .main {
 #page1 .drawing6 {
     -webkit-animation: zoomIn .8s 1 3s both;
     animation: zoomIn .8s 1 3s both;
+}
+
+@-webkit-keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 @keyframes zoomIn {
@@ -437,6 +478,17 @@ html, body, .main {
     animation: fadeIn 1s 1 both;
 }
 
+@-webkit-keyframes move2 {
+    0% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
 @keyframes move2 {
     0% {
         -webkit-transform: rotate(-360deg);
@@ -448,7 +500,6 @@ html, body, .main {
         transform: rotate(0deg);
     }
 }
-
 #page2 p:nth-child(1), #page3 p:nth-child(1), #page4 .Mission_Lodge5 {
     -webkit-transition: all 1s .4s;
     transition: all 1s .4s;
