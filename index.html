@@ -121,7 +121,9 @@
                 <div class="get_on">
                     <img src="image/66666.png" alt="">
                 </div>
-
+                <div class="Page_three8 Page_three">
+                    <img src="images/18.png" alt="">
+                </div>
             </div>
             <div class="swiper-slide slide4">
                 <div class="get_on">
@@ -163,30 +165,93 @@
                     <img src="images/18.png" alt="">
                 </div>
             </div>
-
             <div class="swiper-slide slide5">
                 <div class="get_on">
                     <img src="image/66666.png" alt="">
                 </div>
-                <div class=" foot&hand_print foot&hand_print1 Single">
+                <div class=" Five-pages Evaluate1 Single">
                     <p>个</p>
                 </div>
-                <div class=" foot&hand_print foot&hand_print2 Single">
+                <div class=" Five-pages Evaluate2 Single">
                     <p>人</p>
                 </div>
-                <div class=" foot&hand_print foot&hand_print3 Single">
+                <div class=" Five-pages Evaluate3 Single">
                     <p>评</p>
                 </div>
-                <div class=" foot&hand_print foot&hand_print4  Single">
+                <div class=" Five-pages Evaluate4  Single">
                     <p>价</p>
                 </div>
-                <div class=" foot&hand_print foot&hand_print1"></div>
-                <div class=" foot&hand_print foot&hand_print1"></div>
+                <div class=" Five-pages print1"></div>
+                <div class="  print2">
+                    <span>勇敢 , 积极 , 自信 , 敢于创新 . </span>
+                    <span>勇于自我挑战 , </span>
+                    <span>有较强的的环境适应能力与自我</span>
+                    <span>管理能力 , 能与同事和睦相处</span>
+                    <span>具有较强的责任感和团队意识</span>
+                </div>
+                <div class=" Five-pages print3">
+                    <img src="images/The fifth page images8.png" alt="">
+                </div>
+                <div class=" Five-pages print4">
+                    <img src="images/The fifth page images2.png" alt="">
+                </div>
+                <div class=" Five-pages print5">
+                    <img src="images/The fifth page images4.png" alt="">
+                </div>
+                <div class=" Five-pages print6">
+                    <img src="images/The fifth page images5.png" alt="">
+                </div>
+                <div class=" Five-pages print7">
+                    <img src="images/The fifth page images6.png" alt="">
+                </div>
+                <div class=" Five-pages print8">
+                    <p>宣</p>
+                    <p>言</p>
+                    <span>世上无难事</span>
+                    <span>只怕有心人</span>
+                </div>
+                <div class=" Five-pages print9">
+                    <div><span>不经冬寒，不知春暖</span></div>
+                    <div><span>如若相爱,便护他安好</span></div>
+                    <div><span>如若错过,便护他安好</span></div>
+                </div>
+
+
+            </div>
+            <div class="swiper-slide slide6">
+                <div class="get_on">
+                    <img src="image/66666.png" alt="">
+                </div>
+                <div class="last1 last">
+                    <span>联系方式</span>
+                </div>
+                <div class="last2 last">
+                    <span>QQ:865875140</span>
+                </div>
+                <div class="last3 last">
+                    <span>微信:li993515</span>
+                </div>
+                <div class="last4 last">
+                   <span> <img src="image/wwwwww.png" alt=""></span>
+                </div>
+                <div class="last5 last"></div>
+                <div class="last6 last"></div>
+                <div class="last7 last"></div>
+                <div class="last8 last"></div>
+                <div class="last9 last"></div>
+                <div class="last10 last"></div>
+                <div class="last11 last"></div>
+                <div class="last12 last"></div>
+                <div class="last13 last"></div>
+
 
 
             </div>
         </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
     </div>
+
 </article>
 </body>
 </html>
@@ -196,6 +261,9 @@
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'vertical',
         loop: true,
+        pagination: '.swiper-pagination',
+        paginationType: 'bullets',
+        lazyLoading: true,
         onTransitionEnd: function (swiper) {
             var curindex = swiper.activeIndex;
             var slides = swiper.slides;
